@@ -7,7 +7,7 @@ categories: php snippet
 
 WordPress, via the Menu Logic widget, lets you customise when menus are displayed on certain pages based on some simple php that you add to `functions.php`.
 
-{% highlight php %}
+{% highlight php startinline %}
 global $post; 
 return ((is_page('33'))  ||  ($post->post_parent=="33")  );
 {% endhighlight %}
