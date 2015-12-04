@@ -27,9 +27,9 @@ $homedir_archive = "homedir_backup-$day-$month-$year.tar.gz";
 $full_backup_file = "full_site_backup-$day-$month-$year.tar.gz";
 
 # MYSQL BACKUP PARAMETERS
-$dbhost = 'nwp1518304214688.db.6992894.hostedresource.com';
-$dbuser = 'nwp1518304214688';
-$dbpwd = 'j7H#LKkx';
+$dbhost = 
+$dbuser = 
+$dbpwd = 
 $mysql_backup_file = "mysql_databases-$day-$month-$year.sql.gz";
 $backup_all_databases = 'yes'; # IF SET TO NO, SPECIFY INDIVIDUAL DATABASE NAME(S) BELOW
 
