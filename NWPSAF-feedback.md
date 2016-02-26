@@ -43,3 +43,10 @@ Helpdesk link here is dead.
 ### RTTOV
 
 FAQs is linked to in the drop down 2nd level menu, but not on the RTTOV static menu. (Oh no wait it's under the RTTOV v11 drop down.)
+
+**Downloading RTTOV archived version 7.1**. The link did not work:
+
+> Error message:
+> File /var/chroot/home/content/94/6992894/repository/old_versions/ does not exist! Key: !
+
+All the other ones I tested worked fine. 
