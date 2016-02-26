@@ -50,3 +50,12 @@ FAQs is linked to in the drop down 2nd level menu, but not on the RTTOV static m
 > File /var/chroot/home/content/94/6992894/repository/old_versions/ does not exist! Key: !
 
 All the other ones I tested worked fine. 
+
+## Design Stuff
+
+I know this will sound really picky, but the banner image on the front page uses a different font to the rest of the site (and is in italics). And you can't really see the image because it's covered by the text...which is white and blends in with the clouds... But I like the banner!
+
+The text in a lot of the tables is very small.
+
+
+Apologies if some of these bugs were caused by me! 
