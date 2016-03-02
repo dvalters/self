@@ -2,6 +2,8 @@ Hi Dave,
 
 Nice to see the site is nearly ready to go! Overall I couldn't find any pressing issues, most of these are minor/pedantic things. Speed is good, I almost forgot to mention this because I didn't actually notice it, which is good. 
 
+Registration, forum, and helpdesk all seemed quick and painless. Helpdesk looking a lot more streamlined from the users point of view.
+
 Tested under Google Chrome v48 on Linux (Fedora) and Windows 7. Had a brief test on IE on Windows too, no major differences.
 
 ## Home page
@@ -69,6 +71,7 @@ All the other ones I tested worked fine.
 I know this will sound picky, but the banner image on the front page uses a different font to the rest of the site (and is in italics). And you can't really see the image because it's covered by the text...which is white and blends in with the clouds... But I like the banner!
 
 The text in a lot of the tables is very small.
+
 
 
 **P.S. Apologies if some of these bugs were caused by me!** 
