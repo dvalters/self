@@ -1,3 +1,13 @@
+Hi Dave,
+
+Nice to see the site is nearly ready to go! Overall I couldn't find any pressing issues, most of these are minor/pedantic things. Speed is good, I almost forgot to mention this because I didn't actually notice it, which is good. 
+
+Tested under Google Chrome v48 on Linux (Fedora) and Windows 7. Had a brief test on IE on Windows too, no major differences.
+
+## Home page
+
+On Chrome, the graphic in the News Feature sidebar on the right does not display (but it did in IE...). Instead I just get the little missing image icon and the name of the image file...
+
 ## Monitoring Pages
 
 ### Winds QEv
@@ -26,8 +36,11 @@ All these plot's popup windows have 'undefined' in the plot type title. I think 
 
 #### DBNet
 
-IASI, CrIS and ATMS monitoring pages are not functioning. (Nothing in the drop down selection boxes)
+~~IASI, CrIS and ATMS monitoring pages are not functioning. (Nothing in the drop down selection boxes)~~, ah they work today!
+
 Statistics link links back to the old site.
+
+Minor use-ability point, but the ATOVS page will automatically update the plot when a dropdown box is changed, but the others (IASI, CrIS and ATMS) require the user to click 'go' before anything happens. (
 
 #### NRT Quality
 
@@ -53,9 +66,9 @@ All the other ones I tested worked fine.
 
 ## Design Stuff
 
-I know this will sound really picky, but the banner image on the front page uses a different font to the rest of the site (and is in italics). And you can't really see the image because it's covered by the text...which is white and blends in with the clouds... But I like the banner!
+I know this will sound picky, but the banner image on the front page uses a different font to the rest of the site (and is in italics). And you can't really see the image because it's covered by the text...which is white and blends in with the clouds... But I like the banner!
 
 The text in a lot of the tables is very small.
 
 
-Apologies if some of these bugs were caused by me! 
+**P.S. Apologies if some of these bugs were caused by me!** 
