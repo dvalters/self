@@ -20,7 +20,7 @@ layout: default
   
   <h1 class="page-heading">Blogposts</h1>
     <ul class="post-list">
-    {% for post in site.blogposts %}
+    {% for post in site.categories.ramblings %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
