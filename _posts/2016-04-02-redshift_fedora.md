@@ -21,7 +21,9 @@ The gtk package installs a GUI applet. You will need to tweak one file in your s
 ```
 sudo vim /etc/geoclue/geoclue.conf
 ```
+
 add the following lines at the end:
+
 ```
 [redshift]
 allowed=true
