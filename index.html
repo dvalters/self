@@ -20,12 +20,12 @@ layout: default
   
   <h1 class="page-heading">Blogposts</h1>
     <ul class="post-list">
-    {% for blogpost in site.blogposts %}
+    {% for post in site.blogposts %}
       <li>
-        <span class="post-meta">{{ blogpost.date | date: "%b %-d, %Y" }}</span>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <h3>
-          <a class="post-link" href="{{ blogpost.url | prepend: site.baseurl }}">{{ blogpost.title }}</a>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h3>
       </li>
     {% endfor %}
