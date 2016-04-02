@@ -2,7 +2,7 @@
 layout: post
 title: Redshift - rest your eyes
 tags: utility
-----
+---
 
 ## f.lux
 
@@ -12,7 +12,9 @@ tags: utility
 
 For fedora, f.lux is not available (unless you compile ot from source), but an equally good alternative, *redshift* exists. It can be installed from the fedora repository with yum/dnf.
 
-`dnf install redshift redshift-gtk`
+```
+dnf install redshift redshift-gtk
+```
 
 The gtk package installs a GUI applet. You will need to tweak one file in your system for the applet to run correctly and detect your location automatically.
 
