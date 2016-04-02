@@ -1,5 +1,5 @@
 # Site settings
-title: /dav/dev
+title: /dav/null
 email: dvalts@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Some musings about life, code, and biscuits. Mainly code.
