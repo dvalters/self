@@ -54,7 +54,7 @@
 \begin{document}
 
 \begin{flushleft}
-{\LARGE \textbf{Dr Declan A Valters}} \\
+{\LARGE \textbf{Dr Declan Valters}} \\
 \parskip=0.5em
 {\textbf{\large{Research Software Engineer}} \\ 
 \parskip=0.8em
@@ -99,7 +99,7 @@ declan.valters@ed.ac.uk
 		{\textbf{Met Office}}
 	\\
 	\headerrow
-		{\emph{Met Office Modelling Infrastructure Support Systems}}
+		{\emph{Modelling Infrastructure Support Systems}}
 		{\emph{03/2017 -- 11/2017}}
 
 	\item
@@ -108,7 +108,7 @@ declan.valters@ed.ac.uk
 		{\textbf{Met Office}}
 	\\
 	\headerrow
-		{\emph{Met Office Satellite Applications}}
+		{\emph{Satellite Applications}}
 		{\emph{06/2015 -- 10/2015}}
 
 \end{itemize}
@@ -135,7 +135,7 @@ declan.valters@ed.ac.uk
   
 	\item 
 	\headerrow
-		{\textbf{Master in Earth Science (Hons., 1\textsuperscript{st} Class)} }
+		{\textbf{Master in Earth Science} (Hons., 1\textsuperscript{st} Class) }
 		{\textbf{University of Edinburgh}}
 	\\
 	\headerrow
@@ -168,15 +168,16 @@ declan.valters@ed.ac.uk
 		{\textbf{Cylc and Rose}}
 		{\url{https://cylc.github.io/cylc}}
 
-		Development of the Cylc software package, a scientific workflow manager and scheduler. \\ 
-		Development of the Rose software framework for configuration of meteorological applications. 
+		Met Office applications for numerical modelling infrastructure support. \\
+		Development of the Cylc software package, a scientific workflow manager and scheduler (\textbf{Python}). \\ 
+		Development of the Rose software framework for configuration of meteorological applications (\textbf{Python}). 
 
 	\item
 	\headerrow
 		{\textbf{HAIL-CAESAR: A numerical landscape evolution model for HPC}}
 		{\url{http://dvalts.io/HAIL-CAESAR}}
 
-		A \textbf{C++} cellular automaton model ported to HPC (High performance computing) facilities through a shared-memory parallelism model (\textbf{OpenMP}). \\
+		Originally my PhD software project. A \textbf{C++} cellular automaton model ported to HPC (High performance computing) facilities through a shared-memory parallelism model (\textbf{OpenMP}). \\
 		I translated and developed the CAESAR-Lisflood numerical model from a C{\#}/.NET application into a platform-independent code suitable for high-performance computer use such as ensemble simulations and sensitivity analyses. 
 
 
@@ -186,7 +187,7 @@ declan.valters@ed.ac.uk
 		{\url{http://lsdtopotools.github.io}}
 
 		Object-oriented \textbf{{\CPP}} topographic analysis and modelling package developed with the Land Surface Dynamics research group at Edinburgh. The continuing aim of the project is to implement state-of-the art algorithms as they are published in academic literature. A key aim of LSDTopoTools is to facilitate reproducible scientific data analysis for large topographic datasets. \\
-		My specific role was to develop the statistical analysis tools (\CPP), visualisation (Python), and automation scripts (Python) for task-farming sensitivity analyses.
+		My contributions have been to improve parallelisation (\textbf{OpenMP}) within the code. develop the statistical analysis tools (\CPP), visualisation and automation scripts (\textbf{Python}) for task-farming sensitivity analyses.
 
 	
 	\item
@@ -195,8 +196,8 @@ declan.valters@ed.ac.uk
 		{\url{https://nwpsaf.eu}}
 
 		Redevelopment of the Met Office/European Meteorological Satellite facility website. A public website used for the retrieval of post-processed satellite data and imagery. \\
-		Designed and implemented a MySQL database for satellite image metadata, integrated with a Javascript front-end for retrieval and rendering of data and imagery. \\
-		I wrote several tools for keeping the database maintained automatically (Shell scripts/Python/PHP) as new data were added. 
+		Designed and implemented a \textbf{MySQL} database for satellite image metadata, integrated with a Javascript front-end for retrieval and rendering of data and imagery. \\
+		I wrote several tools for keeping the database maintained automatically (\textbf{Shell scripts/Python/PHP}) as new data were added. 
 
 \end{itemize}
 
@@ -383,50 +384,43 @@ declan.valters@ed.ac.uk
 	\headerrow
 		{\textbf{Professional memberships}}
 		{}
-%	\headerrow {British Society for Geomorphology}{}
+	\headerrow {Royal Meteorological Society}{}
 	\headerrow {UK Research Software Engineers Network}{}
 
 \end{itemize*}
 
 \hrule
 \vspace{-0.4em}
-\subsection*{Teaching roles and other service} 
+\subsection*{Teaching roles and mentoring experience} 
 	\parskip=0.1em
 \begin{itemize*}
 	\item
 	\headerrow
-		 {Workshops written and delivered - University of Edinburgh}
-		 {\textit{2018 -- present}}
-  \headerrow
-      {Courses taught:}
-      {}
-		\begin{itemize*}
-		\item Introduction to Python
-    \item Pandas for Data Analysis
-		\end{itemize*}
+	{Conference workshops written and delivered}
+	{}
+	  \begin{itemize*}
+	  \item EuroScipy 2018 -- Introduction to Parallelism in Python
+	  \item Research Software Engineering 2018 Conference - Introduction to Parallelism in Python
+	  \end{itemize*}
+
 	\item
 	\headerrow
-		 {Journal of Open Source Software -- reviewer}
-		 {\textit{2017 -- present}}
-%	\item 
-%	\headerrow 
-%	  {British Society for Geomorphology -- Web Officer}
-%	  {\textit{2015 -- 2017}}
+	{Workshops - University of Edinburgh}
+	{\textit{2018 -- present}}
+	  \begin{itemize*}
+	  \item Introduction to Fortran
+	  \item Introduction to Python
+	  \item Pandas for Data Analysis
+	  \end{itemize*}
+
+
 	\item
 	\headerrow
-		 {Teaching Assistant -- University of Manchester}
-		 {\textit{2013 -- 2016}}
-%  \headerrow
-%      {Courses taught:}
-%      {}
-%		\begin{itemize*}
-%		\item Fortran and Matlab for engineers
-%    \item Earth Surface Processes (Geomorphology)
-%    \item Engineering Geology
-%    \item Earth Resources
-%    \item Our Earth (Open Online Course Moderation)
-%		\item Global tectonics
-%			\end{itemize*}
+	{Teaching Assistant -- University of Manchester}
+	{\textit{2013 -- 2016}}
+	  \begin{itemize*}
+	  \item Fortran and Matlab for engineers - MSc course
+	  \end{itemize*}
 \end{itemize*}
 
 \hrule
@@ -436,22 +430,56 @@ declan.valters@ed.ac.uk
 \begin{itemize*}
 	\item 
 	\headerrow 
-	  {ARCHER CSE Project Grant}
-	  {EPCC -- 3 person months of software development awarded}
+	  {ECMWF Summer of Weather Code}
+	  {ECMWF grant to develop Python software for enabling a NetCDF as filesystem in user space (FUSE)}
+
+	\item 
+	\headerrow 
+	  {ARCHER eCSE Co-Investigator (PI - Simon Mudd)}
+	  {Enabling multi-node MPI parallelisation of the LISFLOOD flood-inundation model within the LSDTopoTools modelling framework (3  months) }
 
 	\item 
 	\headerrow 
 	  {5th Intel Xeon Phi Access Programme}
-	  {STFC, Hartree Centre -- 4 months trial}
-
-%	\item
-%	\headerrow
-%		 {Mackay Greenland Scholarship}
-%		 {UoE Award for Greenland-based research project -- £1000}
-%	\item Undergraduate Class Medal
+	  {STFC, Hartree Centre -- (Porting the LISFLOOD/HAIL-CAESAR model to the Xeon Phi architecture (4 months trial)}
 
 
 \end{itemize*}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Relevant community service and voluntary roles}
+	\parskip=0.1em
+\begin{itemize*}
+	\item
+	\headerrow
+	  {Journal of Open Source Software -- reviewer}
+	  {\textit{2017 -- present}}
+
+	\item 
+	\headerrow 
+	  {EuroPython 2018}
+	  {Session chair and Conference volunteer}
+	  
+	\item 
+	\headerrow 
+	  {PyCon Ireland 2016}
+	  {Conference volunteer}
+
+	\item 
+	\headerrow 
+	  {First Research Sofware Engineering conference RSE16}
+	  {Conference volunteer}
+	  
+	\item 
+	\headerrow 
+	  {British Society for Geomorphology -- Web Officer}
+	  {\textit{2015 -- 2017}}
+
+
+
+\end{itemize*}
+
 
 
 %\hrule
