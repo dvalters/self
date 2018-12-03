@@ -1,0 +1,502 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[10.5pt,a4]{article}
+\usepackage[letterpaper,margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+%\renewcommand{\familydefault}{\sfdefault}
+%\usepackage{helvet}
+%\renewcommand{\familydefault}{\sfdefault}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{flushleft}
+{\LARGE \textbf{Dr Declan Valters}} \\
+\parskip=0.5em
+{\textbf{\large{Research Software Engineer}} \\ 
+\parskip=0.8em
+Global Change Research Institute -- University of Edinburgh} \\
+\parskip=0.6em
+%14 Otley Mount\ \textbullet
+%\ \ East Morton\ \textbullet \ Keighley  \\
+%\ BD20 5TD\ \textbullet \ United Kingdom \ \textbullet \
+\textbf{GitHub:} \url{https://github.com/dvalters} \\ 
+\textbf{Website:} \url{http://dvalts.io} \\
+\parskip=0.8em 
+declan.valters@ed.ac.uk
+\end{flushleft}
+
+
+%\hrule
+%\vspace{-0.4em}
+%\subsection*{Research Software Interests}
+%I am a scientific software engineer interested in atmospheric, hydrological, and geomorphological modelling, as well as topographic data analysis. I am interested particularly in the links between weather and land surface processes and the development of numerical models that underpin research in land surface dynamics using high-performance computing.
+%\vspace{1em}
+
+\hrule
+\vspace{-0.4em}
+
+
+\subsection*{Employment}
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{Research Software Engineer}}
+		{\textbf{University of Edinburgh}}
+	\\
+	\headerrow
+		{\emph{School of Geosciences}}
+		{\emph{11/2017 -- present}}
+
+	\item
+	\headerrow
+		{\textbf{Scientific Software Engineer}}
+		{\textbf{Met Office}}
+	\\
+	\headerrow
+		{\emph{Modelling Infrastructure Support Systems}}
+		{\emph{03/2017 -- 11/2017}}
+
+	\item
+	\headerrow
+		{\textbf{Software Developer (PhD work placement)}}
+		{\textbf{Met Office}}
+	\\
+	\headerrow
+		{\emph{Satellite Applications}}
+		{\emph{06/2015 -- 10/2015}}
+
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Education}
+\begin{itemize}
+	\parskip=0.1em
+	
+	\item 
+	\headerrow
+		{\textbf{PhD in Earth, Atmospheric, and Environmental Science}}
+		{\textbf{University of Manchester}}
+	\\
+	\headerrow
+		{\emph{Thesis}: Modelling catchment sensitivity to rainfall resolution and}
+		{\emph{2013 -- 2017}}
+	\headerrow
+		{\hspace{10mm} erosional parameterisation in simulations of flash floods in the UK}
+		{}
+%  \headerrow
+%    {\emph{Supervisors:} Prof David Schultz, Dr Simon Brocklehurst}
+  
+	\item 
+	\headerrow
+		{\textbf{Master in Earth Science} (Hons., 1\textsuperscript{st} Class) }
+		{\textbf{University of Edinburgh}}
+	\\
+	\headerrow
+		{\emph{Thesis}: Extracting tectonic information using statistical methods of river profile analysis}
+		{\emph{2009 -- 2013}}
+%	\headerrow
+%    {\emph{Supervisor:} Prof Simon Mudd} 
+%    {}
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Software Projects}
+\begin{itemize}
+	\parskip=0.1em
+	
+	\item
+	\headerrow
+		{\textbf{Global Change Ecology Lab Software}}
+		{\textbf{\url{https://github.com/GCEL}}}
+
+		\parskip=0.8em
+
+		 Extended functionality of the LVT (Land Surface Verification Toolkit) to read JULES input data. (\textbf{Fortran}) \\
+		 Development of a python interface to the SPECCHIO spectral information system. (\textbf{Python}) \\
+		 Implementation of git version control and support of best practices in software engineering for scientists in the research group.
+
+	\item
+	\headerrow
+		{\textbf{Cylc and Rose}}
+		{\url{https://cylc.github.io/cylc}}
+
+		Met Office applications for numerical modelling infrastructure support. \\
+		Development of the Cylc software package, a scientific workflow manager and scheduler (\textbf{Python}). \\ 
+		Development of the Rose software framework for configuration of meteorological applications (\textbf{Python}). 
+
+	\item
+	\headerrow
+		{\textbf{HAIL-CAESAR: A numerical landscape evolution model for HPC}}
+		{\url{http://dvalts.io/HAIL-CAESAR}}
+
+		Originally my PhD software project. A \textbf{C++} cellular automaton model ported to HPC (High performance computing) facilities through a shared-memory parallelism model (\textbf{OpenMP}). \\
+		I translated and developed the CAESAR-Lisflood numerical model from a C{\#}/.NET application into a platform-independent code suitable for high-performance computer use such as ensemble simulations and sensitivity analyses. 
+
+
+	\item
+	\headerrow
+		{\textbf{Land Surface Dynamics Topographic Toolbox}}
+		{\url{http://lsdtopotools.github.io}}
+
+		Object-oriented \textbf{{\CPP}} topographic analysis and modelling package developed with the Land Surface Dynamics research group at Edinburgh. The continuing aim of the project is to implement state-of-the art algorithms as they are published in academic literature. A key aim of LSDTopoTools is to facilitate reproducible scientific data analysis for large topographic datasets. \\
+		My contributions have been to improve parallelisation (\textbf{OpenMP}) within the code. develop the statistical analysis tools (\CPP), visualisation and automation scripts (\textbf{Python}) for task-farming sensitivity analyses.
+
+	
+	\item
+	\headerrow
+		{\textbf{Numerical Weather Prediction -- Satellite Application Facility website}}
+		{\url{https://nwpsaf.eu}}
+
+		Redevelopment of the Met Office/European Meteorological Satellite facility website. A public website used for the retrieval of post-processed satellite data and imagery. \\
+		Designed and implemented a \textbf{MySQL} database for satellite image metadata, integrated with a Javascript front-end for retrieval and rendering of data and imagery. \\
+		I wrote several tools for keeping the database maintained automatically (\textbf{Shell scripts/Python/PHP}) as new data were added. 
+
+\end{itemize}
+
+%\hrule
+%\vspace{-0.4em}
+%\subsection*{Publications}
+%\begin{itemize}
+%
+%	\parskip=0.1em
+%	\item	
+%	\headerrow
+%	{\textbf{In preparation}}
+%	
+%	\begin{itemize*}
+%			\item \textbf{Valters, D.A.,} et al. (in prep.) \textit{HAIL-CAESAR: A cellular automaton hydrodynamic landscape evolution model parallelised for shared-memory computing architectures.} Geoscientific Model Development	
+%	\parskip=0.5em 	
+%				\item \textbf{Valters, D.A.,} et al. (in prep.) \textit{Sensitivity of a flood-inundation model to rainfall distribution and erosional parameterisation.} Hydrology and Earth System Sciences.
+%	\end{itemize*}	
+%	
+%	\item	
+%	\headerrow
+%	{\textbf{2017}}
+%	
+%	\begin{itemize*}
+%
+%   \parskip=0.5em 
+%    \item Clubb, F.J. , Mudd, S.M., Milodowski, D.T., \textbf{Valters, D.A.}, Slater, L.J., Hurst, M.D., and Limaye, A.B (2017) Geomorphometric delineation of floodplains and terraces from objectively defined topographic thresholds, Earth Surf. Dynam.
+%	\parskip=0.5em
+%	
+%  \end{itemize*}
+%  
+%  \item	
+%	\headerrow
+%	{\textbf{2016}}
+%	
+%	\begin{itemize*}
+%		\item \textbf{Valters, D.A.} (2016). \textit{Modelling Geomorphic Systems: Landscape Evolution.} In: Cook, S.J., Clarke, L.E. \& Nield, J.M. (Eds.) Geomorphological Techniques (Online Edition). British Society for Geomorphology; London, UK. ISSN: 2047-0371.
+%	\end{itemize*}
+%	
+%	
+%	\item	
+%	\headerrow
+%		{\textbf{2014}}
+%		
+%	\begin{itemize*}
+%		\item Mudd, S.M., Attal, M., Milodowski, D.T., Grieve, S.W.D. and \textbf{Valters, D.A.} (2014). \textit{A statistical framework to quantify spatial variation in channel gradients using the integral method of channel profile analysis}, Journal of Geophysical Research: Earth Surface
+%	\end{itemize*}
+%\end{itemize}
+%
+%\hrule
+%\vspace{-0.4em}
+%\subsection*{Conference Presentations and Abstracts}
+%\begin{itemize}
+%	\parskip=0.1em
+%
+%	\item
+%	\headerrow
+%	{\textbf{2016}}
+%		
+%	\begin{itemize*}
+%	\item \textbf{Valters, D.A.} (2016) \textit{Frontiers in geomorphological computing.} 1st annual Research Software Engineers conference, Manchester, UK.
+%	\parskip=0.5em
+%	\item \textbf{Valters, D.A.}, \& Brocklehurst, S. H. (2016) \textit{Topographic signatures of spatially-limited storm morphologies revealed from numerical landscape evolution modelling.} Geophysical Research Abstracts, EGU General Assembly, Abstract 18-14328.
+%	\parskip=0.5em
+%	\item Clubb, F.J., Mudd, S.M., Milodowski, D.T., and \textbf{Valters, D.A.} (2016) Geomorphometric delineation of floodplains
+%and terraces from slope and channel relief thresholds, AGU Fall Meeting, Poster.
+%	\end{itemize*}
+%	
+%	\item	
+%	\headerrow
+%	{\textbf{2015}}	
+%	
+%	\begin{itemize*}	
+%  \item \textbf{Valters, D.A.}, Brocklehurst, S. and Schultz, D., (2015). Sensitivity of hydro-geomorphic processes to catchment-scale variations in rainfall distribution. In EGU General Assembly Conference Abstracts (Vol. 17).	
+%	\parskip=0.5em
+%  \item	Mudd, S.M., Grieve, S.W.D., Milodowski, D.T., Hurst, M.D., Clubb, F.J.,   \textbf{Valters, D.A.}, (2015) \textit{LSDTopoToolBox: Open source geomorphology.} Presented at the BSG Annual General Meeting, Southampton.
+%  \end{itemize*}
+%  
+%	\item
+%	\headerrow
+%	{\textbf{2014}}
+%
+%	\begin{itemize*}
+%		\item \textbf{Valters, D.A.} (2014). \textit{Modelling landscape sensitivity to stormier climates}, British Society for Geomorphology Annual Conference, BSG Annual General Meeting, Manchester	
+%	\parskip=0.5em
+%		\item \textbf{Valters, D.A.} and Mudd, S.M. (2014). \textit{Extracting tectonic information using the integral method of river profile analysis: applications along the Wasatch fault, Utah}, Geophysical Research Abstracts, EGU General Assembly, Abstract EGU2014-16074-1.
+%	\parskip=0.5em	
+%	\item Mudd, S.M., Attal, M., Milodowski, D.T., Grieve, S.W.D. and \textbf{Valters, D.A.} (2014). \textit{A statistical technique for identifying channels of different steepness in transient landscapes}, Geophysical Research Abstracts, EGU General Assembly, Abstract EGU2014-15780.
+%	\end{itemize*}
+%
+%\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Technical Skills}
+	\parskip=0.1em
+	\paragraph*{Programming Languages \& Software}
+		\begin{itemize*}
+		\item My current working languages are \textbf{Python} (including NumPy, Matplotlib), {\textbf{\CPP}} and {\textbf{Fortran}}. 
+		\item Experience in HPC applications including implementing \textbf{OpenMP}-style parallelism, as well as \textbf{MPI} approaches to parallelisation. 
+		\item Experience in using \textbf{subversion} and \textbf{git} version control systems. 
+		\item Previously I've worked on projects using \textbf{Javascript} and \textbf{PHP} for web development. 
+		\item Basic knowledge of \textbf{Matlab} and \textbf{C}.
+	\item Experience in using and modifying the \textbf{WRF} numerical weather prediction model and familiarity with the Met Office \textbf{Unified Model} (UM).
+	\end{itemize*}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Professional Development}
+\begin{itemize}
+	\item 
+	\headerrow
+		{\textbf{Programming/Technical courses}}
+		{\textbf{2-3 day courses, provided by ARCHER/EPCC}}
+	\\
+		\headerrow
+		{Fortran Modernisation}
+		{\emph{February 2017}}
+	\\
+	\headerrow
+		{Writing scalable parallel applications with MPI}
+		{\emph{December 2016}}
+	\\
+	\headerrow
+		{Advanced MPI}
+		{\emph{September 2016}}
+		\\
+	\headerrow
+		{Advanced OpenMP}
+		{\emph{August 2016}}
+	\\
+	\headerrow
+		{Message-passing programming with MPI}
+		{\emph{July 2016}}
+	\\
+	\headerrow
+		{Single-node performance optimisation}
+		{\emph{December 2015}}
+	\\
+	\headerrow
+		{Shared Memory programming with OpenMP}
+		{\emph{December 2015}}
+	\\
+	\headerrow
+		{Extended introduction to CUDA}
+		{\emph{November 2015}}
+\end{itemize}
+
+\begin{itemize}
+	\item 
+	\headerrow
+		{\textbf{Numerical Weather Prediction Model training}}
+		{}
+	\\
+		\headerrow
+		{The Weather Research and Forecasting Model (WRF)} 
+		{\textit{NCAS/NCAR -- October 2013}}
+  \\
+		\headerrow
+		{Met Office Unified Model (UM)}
+		{\textit{NCAS/University of Reading -- December 2014}}
+\end{itemize}
+
+%\begin{itemize}
+%	\item 
+%	\headerrow
+%		{\textbf{Scientific training}}
+%		{}
+%	\\
+%		\headerrow
+%		{NERC/JBA Extreme Flood Forecasting and Management}
+%		{\emph{5 days -- January 2015}}
+%	\\
+%		\headerrow
+%		{NCAS Atmospheric Science Summer School}
+%		{\emph{2 weeks -- September 2013}}
+%
+%\end{itemize}
+
+\begin{itemize*}
+	\item 
+	\headerrow
+		{\textbf{Professional memberships}}
+		{}
+	\headerrow {Royal Meteorological Society}{}
+	\headerrow {UK Research Software Engineers Network}{}
+
+\end{itemize*}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Teaching roles and mentoring experience} 
+	\parskip=0.1em
+\begin{itemize*}
+	\item
+	\headerrow
+	{Conference workshops written and delivered}
+	{}
+	  \begin{itemize*}
+	  \item EuroScipy 2018 -- Introduction to Parallelism in Python
+	  \item Research Software Engineering 2018 Conference - Introduction to Parallelism in Python
+	  \end{itemize*}
+
+	\item
+	\headerrow
+	{Workshops - University of Edinburgh}
+	{\textit{2018 -- present}}
+	  \begin{itemize*}
+	  \item Introduction to Fortran
+	  \item Introduction to Python
+	  \item Pandas for Data Analysis
+	  \end{itemize*}
+
+
+	\item
+	\headerrow
+	{Teaching Assistant -- University of Manchester}
+	{\textit{2013 -- 2016}}
+	  \begin{itemize*}
+	  \item Fortran and Matlab for engineers - MSc course
+	  \end{itemize*}
+\end{itemize*}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Grants and Awards}
+	\parskip=0.1em
+\begin{itemize*}
+	\item 
+	%\headerrow 
+	  {ECMWF Summer of Weather Code}
+	  {ECMWF grant to develop Python software for enabling a NetCDF as filesystem in user space (FUSE)}
+
+	\item 
+	%\headerrow 
+	  {ARCHER eCSE Co-Investigator (PI - Simon Mudd)}
+	  {Enabling multi-node MPI parallelisation of the LISFLOOD flood-inundation model within the LSDTopoTools modelling framework (3  months) }
+
+	\item 
+	%\headerrow 
+	  {5th Intel Xeon Phi Access Programme}
+	  {STFC, Hartree Centre -- (Porting the LISFLOOD/HAIL-CAESAR model to the Xeon Phi architecture (4 months trial)}
+
+
+\end{itemize*}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Relevant community service and voluntary roles}
+	\parskip=0.1em
+\begin{itemize*}
+	\item
+	\headerrow
+	  {Journal of Open Source Software -- Reviewer}
+	  {\textit{2017 -- present}}
+
+	\item 
+	\headerrow 
+	  {EuroPython 2018}
+	  {Session chair and Conference volunteer}
+	  
+	\item 
+	\headerrow 
+	  {Conference volunterr -- PyCon Ireland}
+	  {2016}
+
+	\item 
+	\headerrow 
+	  {Research Sofware Engineering conference volunteer -- RSE16}
+	  {2016}
+	  
+	\item 
+	\headerrow 
+	  {British Society for Geomorphology -- Web Officer}
+	  {\textit{2015 -- 2017}}
+
+	\item 
+	\headerrow 
+	  {Founder of the Python users Group in the Centre for Atmospheric Science (University of Manchester)}
+	  {\textit{}}
+
+
+
+\end{itemize*}
+
+
+
+%\hrule
+%\vspace{-0.4em}
+%\subsection*{Referees}
+%
+%
+%
+%\begin{indentsection}{\parindent}
+%\hyphenpenalty=1000
+%
+%Available on request.
+%\end{indentsection}
+
+\end{document}
