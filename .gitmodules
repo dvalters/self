@@ -1,0 +1,3 @@
+[submodule "vim-settings/.vim/pack/git-plugins/start/YouCompleteMe"]
+	path = vim-settings/.vim/pack/git-plugins/start/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
