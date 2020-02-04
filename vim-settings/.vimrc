@@ -104,3 +104,7 @@ vmap <C-ScrollWheelLeft> <nop>
 vmap <ScrollWheelRight> <nop>
 vmap <S-ScrollWheelRight> <nop>
 vmap <C-ScrollWheelRight> <nop>
+
+set guioptions-=m  "menu bar
+set guioptions-=T  "toolbar
+set guioptions-=r  "scrollbar
